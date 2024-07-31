@@ -1,8 +1,8 @@
-##  README for MongoDBTest Project
+# MongoDBTest Project
 
 This project demonstrates using MongoDB with Spring Data and MapStruct in a Java Spring Boot application. It serves as a learning resource for developers interested in these technologies.
 
-###  Features
+##  Features
 
 * Connects to a MongoDB database
 * Defines a `Student` entity representing student data
@@ -10,7 +10,7 @@ This project demonstrates using MongoDB with Spring Data and MapStruct in a Java
 * Implements a `StudentDTO` to transfer student data without including the ID field
 * Utilizes MapStruct to map between `Student` and `StudentDTO` objects
 
-###  Getting Started
+##  Getting Started
 
 **Prerequisites:**
 
@@ -52,7 +52,7 @@ mvn spring-boot:run
 
 Navigate to ([Swagger UI](http://localhost:8080/swagger-ui.html)) to access the Swagger UI for detailed API documentation and testing.
 
-###  Project Structure
+##  Project Structure
 
 ```
 src/main/java/    - Java source code for the project
@@ -70,7 +70,7 @@ pom.xml            - Maven project configuration file
 README.md          - This file (documentation)
 ```
 
-###  Using the Code
+##  Using the Code
 
 * The `Student` class represents a student with fields for first name, last name, field of study, and personal ID.
 * The `StudentDTO` class mirrors the `Student` class but excludes the ID field for data transfer purposes.
