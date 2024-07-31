@@ -1,8 +1,7 @@
-package com.mongotest.mongodbtestproject.Service;
+package com.mongotest.mongodbtestproject.service;
 
 import com.mongotest.mongodbtestproject.model.Student;
 import com.mongotest.mongodbtestproject.repository.StudentRepository;
-import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import java.util.List;

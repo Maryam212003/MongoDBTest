@@ -1,8 +1,7 @@
-package com.mongotest.mongodbtestproject.Controller;
+package com.mongotest.mongodbtestproject.controller;
 
-import com.mongotest.mongodbtestproject.Service.StudentService;
+import com.mongotest.mongodbtestproject.service.StudentService;
 import com.mongotest.mongodbtestproject.model.Student;
-import org.springframework.data.mongodb.repository.Update;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
