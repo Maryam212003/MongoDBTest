@@ -1,7 +1,7 @@
 package com.mongotest.mongodbtestproject.controller;
 
+import com.mongotest.mongodbtestproject.dto.StudentDTO;
 import com.mongotest.mongodbtestproject.service.StudentService;
-import com.mongotest.mongodbtestproject.model.Student;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -19,26 +19,26 @@ public class StudentController {
     }
 
     @PostMapping
-    public ResponseEntity<Student> createStudent (@RequestBody Student student){
-        Student savedStudent = studentService.createStudent(student);
+    public ResponseEntity<StudentDTO> createStudent (@RequestBody StudentDTO studentDTO){
+        StudentDTO savedStudent = studentService.createStudent(studentDTO);
         return new ResponseEntity<>(savedStudent, HttpStatus.CREATED);
     }
 
     @GetMapping("/searchByFullName")
-    public ResponseEntity<List<Student>> getStudentByName (@RequestParam String firstName, @RequestParam String lastName){
-        List<Student> findStudents = studentService.getStudentByName(firstName, lastName);
+    public ResponseEntity<List<StudentDTO>> getStudentByName (@RequestParam String firstName, @RequestParam String lastName){
+        List<StudentDTO> findStudents = studentService.getStudentByName(firstName, lastName);
         return ResponseEntity.ok(findStudents);
     }
 
     @GetMapping
-    public ResponseEntity<List<Student>> getAllStudents (){
-        List<Student> students = studentService.getAllStudents();
+    public ResponseEntity<List<StudentDTO>> getAllStudents (){
+        List<StudentDTO> students = studentService.getAllStudents();
         return ResponseEntity.ok(students);
     }
 
     @PutMapping("{studentId}")
-    public ResponseEntity<Student> updateStudent (@PathVariable("studentId") String id, @RequestBody Student updatedStudent){
-        Student student = studentService.updateStudent(id, updatedStudent);
+    public ResponseEntity<StudentDTO> updateStudent (@PathVariable("studentId") String id, @RequestBody StudentDTO updatedStudent){
+        StudentDTO student = studentService.updateStudent(id, updatedStudent);
         return ResponseEntity.ok(student);
     }
 

@@ -1,5 +1,6 @@
 package com.mongotest.mongodbtestproject.repository;
 
+import com.mongotest.mongodbtestproject.dto.StudentDTO;
 import com.mongotest.mongodbtestproject.model.Student;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.data.mongodb.repository.Query;

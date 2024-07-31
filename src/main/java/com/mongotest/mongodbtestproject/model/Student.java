@@ -77,4 +77,11 @@ public class Student {
     public void setPersonalId(String personalId) {
         this.personalId = personalId;
     }
+
+    public void update(Student updatedStudent) {
+        this.firstName = updatedStudent.getFirstName();
+        this.lastName = updatedStudent.getLastName();
+        this.personalId = updatedStudent.getPersonalId();
+        this.fieldOfStudy = updatedStudent.getFieldOfStudy();
+    }
 }
