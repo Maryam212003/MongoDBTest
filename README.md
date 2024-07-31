@@ -10,6 +10,14 @@ This project demonstrates using MongoDB with Spring Data and MapStruct in a Java
 * Implements a `StudentDTO` to transfer student data without including the ID field
 * Utilizes MapStruct to map between `Student` and `StudentDTO` objects
 
+## Technologies Used
+* Java
+* Spring Boot
+* Spring Data MongoDB
+* MapStruct
+* Swagger
+* Maven
+    
 ##  Getting Started
 
 **Prerequisites:**
